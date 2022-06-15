@@ -4,7 +4,7 @@ const app = require('../../../app');
 describe('POST /v1/auth/register', () => {
   it("should response with 201 as status code", async () => {
     const password = "rahasia";
-    const name = "adji" + new Date();
+    const name = "wahyu" + new Date();
     const email = name + "@binar.co.id";
 
     return request(app)
@@ -22,8 +22,8 @@ describe('POST /v1/auth/register', () => {
   });
 
   it("should response with 422 as status code", async () => {
-    const name = "fikri";
-    const email = "fikri@binar.co.id";
+    const name = "gagal";
+    const email = "gagal@binar.co.id";
     const password = "123456";
 
     return request(app)

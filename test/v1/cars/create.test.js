@@ -8,7 +8,7 @@ describe('GET /v1/cars', () => {
     request(app)
       .post('/v1/auth/login')
       .send({
-        email: 'adji@binar.com',
+        email: 'wahyu@binar.com',
         password: 'rahasia',
       })
       .expect(201)

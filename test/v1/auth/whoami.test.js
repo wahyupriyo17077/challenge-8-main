@@ -8,7 +8,7 @@ describe('GET /v1/auth/whoami', () => {
     request(app)
       .post('/v1/auth/login')
       .send({
-        email: 'fikri@binar.co.id',
+        email: 'wahyu@binar.co.id',
         password: '123456',
       })
       .expect(201)
